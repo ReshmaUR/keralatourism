@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* .whole{
+    background: no-repeat;
+    background-size: cover;
+    height: 100%;
+} */
+/* for home page styling */
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    /* background: rgba(0,0,0,0.4); */
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family:'Times New Roman', Times, serif;
+    transition: .4s;
+}
+.navbar ul li a.active
+{
+    background: rgb(13, 145, 138);
+    border-radius: 2px;
+}
+.navbar ul li a:hover
+{
+    background: rgb(13, 145, 138);
+    border-radius: 2px;
+}
+.center h1{
+    color: rgb(78, 238, 15);
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 85px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+    padding-top: 45px;
+}
+.center h2{
+    color: rgb(17, 14, 14);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: italic;
+    width: 885px;
+    margin-top: 50px;
+    text-align: center;
+}
+/* .center.buttons{
+    margin: 35px 280px;
+    margin-left: 0px;
+} */
+.buttons button{
+    margin-left: 350px;
+    margin-top: 80px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: rgb(233, 110, 206);
+    border: 1px solid rgb(233, 110, 206);
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: .5s;
+}
+/* .buttons .btn{
+    margin-left: 25px;
+    margin-top: 0px; */
+
+.buttons button:hover{
+    background: rgb(247, 202, 4);
+}
+/* .buttons btn:hover{
+    background: rgb(13, 145, 012);
+} */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color:green;
+    color: white;
+    text-align: center;
+ }

@@ -1,0 +1,85 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    /* background: rgba(0,0,0,0.4); */
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family:'Times New Roman', Times, serif;
+    transition: .4s;
+}
+.navbar ul li a.active
+{
+    background: rgb(13, 145, 138);
+    border-radius: 2px;
+}
+.navbar ul li a:hover
+{
+    background: rgb(13, 145, 138);
+    border-radius: 2px;
+}
+    
+h1{
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 80px;
+margin-top: 30px;
+margin-left: 40px;
+}
+/* .carousel-inner{
+    padding-left: 10px;
+
+} */
+p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+h2{
+    padding-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: indigo;
+    font-size: 70px;
+}
+h3{
+    padding-left: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lawngreen;
+    /* padding-right: 1600px; */
+}
+.secpara{
+    margin-left: 10px;
+}
+/* .carousel-inner{
+    padding-left: 20px;
+} */
+.carousel-inner{
+    padding-left: 15px;
+}
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color:green;
+    color: white;
+    text-align: center;
+ }
