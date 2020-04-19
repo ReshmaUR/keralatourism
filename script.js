@@ -6,9 +6,9 @@ function validate2(){
     var password = document.getElementById("password").value;
     var error_password = document.getElementById("error_pass").value; 
     var regexp = /^([A-Za-z0-9\.-]+)@([A-za-z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
-    var regexp1 = /^[\w]+$/;
-    var regexp2 = /^[\w\@\^\*\?]+$/;
-    var regexp3 = /^[\w\@\^\*\?\!\#\$\%\&\_\~]+$/;
+    var regexp1 = /^[A-Za-z0-9]+$/;
+    var regexp2 = /^[A-Za-z0-9\@\^\*\?]+$/;
+    var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
 
     if(regexp.test(email)){
         // document.getElementById("error").innerHTML = "Valid email id";
@@ -16,27 +16,27 @@ function validate2(){
         document.getElementById("email").style.border = "1px solid green";
         // return true;
         if(regexp1.test(password)){
-            document.getElementById("error_pass").innerHTML = "Password is weak";
+            document.getElementById("error_pass").innerHTML = "Password is incorrect";
             document.getElementById("error_pass").style.color = "red";
             document.getElementById("password").style.border = "1px solid red";
             return false;
         }
         if(regexp2.test(password)){
-            document.getElementById("error_pass").innerHTML = "Looking good";
-            document.getElementById("error_pass").style.color = "orange";
-            document.getElementById("password").style.border = "1px solid orange";
+            document.getElementById("error_pass").innerHTML = "Password is incorrect";
+            document.getElementById("error_pass").style.color = "red";
+            document.getElementById("password").style.border = "1px solid red";
             return false;
         }
         if(regexp3.test(password)&&password.length>=8){
-            document.getElementById("error_pass").innerHTML = "Strong password";
+            // document.getElementById("error_pass").innerHTML = "Strong password";
             document.getElementById("error_pass").style.color = "green";
             document.getElementById("password").style.border = "1px solid green";
             return true;
         }
         else{
-            document.getElementById("error_pass").innerHTML = "Minimum length should be 8";
-            document.getElementById("error_pass").style.color = "yellow";
-            document.getElementById("password").style.border = "1px solid yellow";
+            document.getElementById("error_pass").innerHTML = "Password is incorrect";
+            document.getElementById("error_pass").style.color = "red";
+            document.getElementById("password").style.border = "1px solid red";
             return false;
             }
     }
@@ -61,16 +61,17 @@ function validate(){
     var error_pass_con = document.getElementById("error_pass_con").value; 
     var regexp = /^([\w\.-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
     var regexpm = /^[6-9]\d{2}[\ -.]{1}\d{3}[\ -.]{1}\d{4}$/;
-    var regexp1 = /^[\w]+$/;
-    var regexp2 = /^[\w\@\^\*\?]+$/;
-    var regexp3 = /^[\w\@\^\*\?\!\#\$\%\&\_\~]+$/;
+    var regexpm2 = /^[6-9]\d{2}\d{3}\d{4}$/;
+    var regexp1 = /^[A-Za-z0-9]+$/;
+    var regexp2 = /^[A-Za-z0-9\@\^\*\?]+$/;
+    var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
 
     if(regexp.test(email)){
         // document.getElementById("error").innerHTML = "Valid email id";
         // document.getElementById("error").style.color = "green";
         document.getElementById("email").style.border = "1px solid green";
         // return true;
-        if(regexpm.test(mobile)){
+        if(regexpm.test(mobile)||regexpm2.test(mobile)){
             // document.getElementById("error_mob").innerHTML = "Valid Mobile number";
             // document.getElementById("error_mob").style.color = "green";  
             document.getElementById("mobile").style.border = "1px solid green";
