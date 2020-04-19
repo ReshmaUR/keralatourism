@@ -13,7 +13,7 @@ body{
     box-sizing: border-box;
     padding: 40px;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 h2{
     text-align: center;
@@ -48,4 +48,20 @@ input[type=submit]:hover{
     background: #003366;
     opacity: 0.7;
     cursor: pointer;
+}
+#error{
+    font-family: cursive;
+    padding-left: 70px;
+}
+#error_pass{
+    font-family: cursive;
+    padding-left: 40px;
+}
+#error_mob{
+    font-family: cursive;
+    padding-left: 50px;
+}
+#error_pass_con{
+    font-family: cursive;
+    padding-left: 20px;
 }

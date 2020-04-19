@@ -49,3 +49,11 @@ input[type=submit]:hover{
     opacity: 0.7;
     cursor: pointer;
 }
+#error{
+    font-family: cursive;
+    padding-left: 70px;
+}
+#error_pass{
+    font-family: cursive;
+    padding-left: 50px;
+}
