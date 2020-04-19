@@ -112,7 +112,7 @@ function validate(){
                 }
         }
         else{
-            document.getElementById("error_mob").innerHTML = "Invalid mobile number/incorrect format";
+            document.getElementById("error_mob").innerHTML = "Invalid mobile number/Incorrect format";
             document.getElementById("error_mob").style.color = "red";
             document.getElementById("mobile").style.border = "1px solid red";
             return false;
