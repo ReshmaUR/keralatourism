@@ -28,7 +28,7 @@ function validate2(){
             return false;
         }
         if(regexp3.test(password)&&password.length>=8){
-            // document.getElementById("error_pass").innerHTML = "Strong password";
+            document.getElementById("error_pass").innerHTML = "Password is correct";
             document.getElementById("error_pass").style.color = "green";
             document.getElementById("password").style.border = "1px solid green";
             return true;
