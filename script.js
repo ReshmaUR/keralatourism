@@ -6,9 +6,12 @@ function validate2(){
     var password = document.getElementById("password").value;
     var error_password = document.getElementById("error_pass").value; 
     var regexp = /^([A-Za-z0-9\.-]+)@([A-za-z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
-    var regexp1 = /^[A-Za-z0-9]+$/;
-    var regexp2 = /^[A-Za-z0-9\@\^\*\?]+$/;
-    var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
+    // var regexp1 = /^[A-Za-z0-9]+$/;
+    // var regexp2 = /^[A-Za-z0-9\@\^\*\?]+$/;
+    // var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
+    var regexp1 = /^(?=.*[A-Z])(?=.*[a-z])[A-Za-z]{4,}$/;
+    var regexp2 = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6,}$/;
+    var regexp3 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#_])[a-zA-Z0-9@!#_]{8,}$/;
 
     if(regexp.test(email)){
         // document.getElementById("error").innerHTML = "Valid email id";
@@ -62,9 +65,12 @@ function validate(){
     var regexp = /^([\w\.-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
     var regexpm = /^[6-9]\d{2}[\ -.]{1}\d{3}[\ -.]{1}\d{4}$/;
     var regexpm2 = /^[6-9]\d{2}\d{3}\d{4}$/;
-    var regexp1 = /^[A-Za-z0-9]+$/;
-    var regexp2 = /^[A-Za-z0-9\@\^\*\?]+$/;
-    var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
+    // var regexp1 = /^[A-Za-z0-9]+$/;
+    // var regexp2 = /^[A-Za-z0-9\@\^\*\?]+$/;
+    // var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
+    var regexp1 = /^(?=.*[A-Z])(?=.*[a-z])[A-Za-z]{4,}$/;
+    var regexp2 = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6,}$/;
+    var regexp3 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#_])[a-zA-Z0-9@!#_]{8,}$/;
 
     if(regexp.test(email)){
         // document.getElementById("error").innerHTML = "Valid email id";
