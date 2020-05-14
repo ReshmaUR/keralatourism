@@ -83,18 +83,18 @@ function validate(){
             document.getElementById("mobile").style.border = "1px solid green";
             // return true;
             if(regexp1.test(password)){
-                document.getElementById("error_pass").innerHTML = "Password is weak";
+                document.getElementById("error_pass").innerHTML = "Password is weak (Include number and special character)";
                 document.getElementById("error_pass").style.color = "red";
                 document.getElementById("password").style.border = "1px solid red";
                 return false;
             }
             if(regexp2.test(password)){
-                document.getElementById("error_pass").innerHTML = "Looking good";
+                document.getElementById("error_pass").innerHTML = "Looking good (Include a special character(@!#_))";
                 document.getElementById("error_pass").style.color = "orange";
                 document.getElementById("password").style.border = "1px solid orange";
                 return false;
             }
-            if(regexp3.test(password)&&password.length>=8){
+            if(regexp3.test(password)){
                 document.getElementById("error_pass").innerHTML = "Strong password";
                 document.getElementById("error_pass").style.color = "green";
                 document.getElementById("password").style.border = "1px solid green";
@@ -112,7 +112,7 @@ function validate(){
                     }
             }
             else{
-                document.getElementById("error_pass").innerHTML = "Minimum length should be 8";
+                document.getElementById("error_pass").innerHTML = "Password should contain capital letter,small letter,number and a special character.The length should not be less than 8";
                 document.getElementById("error_pass").style.color = "yellow";
                 document.getElementById("password").style.border = "1px solid yellow";
                 return false;
