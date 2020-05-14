@@ -11,7 +11,7 @@ function validate2(){
     // var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
     var regexp1 = /^(?=.*[A-Z])(?=.*[a-z])[A-Za-z]{4,}$/;
     var regexp2 = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6,}$/;
-    var regexp3 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#_])[a-zA-Z0-9@!#_]{8,}$/;
+    var regexp3 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#_$%^&*-])[a-zA-Z0-9@!#_$%^&*-]{8,}$/;
 
     if(regexp.test(email)){
         // document.getElementById("error").innerHTML = "Valid email id";
@@ -70,7 +70,7 @@ function validate(){
     // var regexp3 = /^[A-Za-z0-9\@\^\*\?\!\#\$\%\&\_\~]+$/;
     var regexp1 = /^(?=.*[A-Z])(?=.*[a-z])[A-Za-z]{4,}$/;
     var regexp2 = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6,}$/;
-    var regexp3 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#_])[a-zA-Z0-9@!#_]{8,}$/;
+    var regexp3 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#_$%^&*-])[a-zA-Z0-9@!#_$%^&*-]{8,}$/;
 
     if(regexp.test(email)){
         // document.getElementById("error").innerHTML = "Valid email id";
@@ -89,7 +89,7 @@ function validate(){
                 return false;
             }
             if(regexp2.test(password)){
-                document.getElementById("error_pass").innerHTML = "Looking good (Include a special character(@!#_))";
+                document.getElementById("error_pass").innerHTML = "Looking good (Include a special character)";
                 document.getElementById("error_pass").style.color = "orange";
                 document.getElementById("password").style.border = "1px solid orange";
                 return false;
@@ -112,7 +112,7 @@ function validate(){
                     }
             }
             else{
-                document.getElementById("error_pass").innerHTML = "Password should contain capital letter,small letter,number and a special character.The length should not be less than 8";
+                document.getElementById("error_pass").innerHTML = "Password should contain minimum 8 characters including uppercase and lowercase letters,a number and a special character";
                 document.getElementById("error_pass").style.color = "yellow";
                 document.getElementById("password").style.border = "1px solid yellow";
                 return false;
